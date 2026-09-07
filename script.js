@@ -34,7 +34,13 @@ const trailerLinks={
 'My Salinger Year':'https://www.youtube.com/watch?v=05jdkAUwGPM',
 'Mafia Inc.':'https://www.youtube.com/watch?v=JurXiwWReao',
 'Long Shot':'https://www.youtube.com/watch?v=ZKsc2I4Tgsk',
-'The Hummingbird Project':'https://www.youtube.com/watch?v=Gey8_fh3hgQ'
+'The Hummingbird Project':'https://www.youtube.com/watch?v=Gey8_fh3hgQ',
+'Tom Clancy’s Jack Ryan':'https://www.primevideo.com/detail/0ONGKHWBI6Y2CABWUR56DP08PM',
+"Tom Clancy's Jack Ryan":'https://www.primevideo.com/detail/0ONGKHWBI6Y2CABWUR56DP08PM',
+'How Tommy Lemenchick Became a Grade 7 Legend':'https://vimeo.com/414036040',
+'mother!':'https://www.youtube.com/watch?v=XpICoc65uh0',
+'John Wick: Chapter 2':'https://www.youtube.com/watch?v=ChpLV9AMqm4',
+'Béliveau':'https://pixcom.com/productions/beliveau/'
 };
 document.querySelectorAll('.credit-list>div').forEach(row=>{const title=row.querySelector('strong');if(!title)return;const url=trailerLinks[title.textContent.trim()];if(!url)return;const a=document.createElement('a');a.className='credit-preview';a.href=url;a.target='_blank';a.rel='noopener';a.innerHTML='<span class="en-label">▶ PREVIEW</span><span class="fr-label">▶ EXTRAIT</span>';title.insertAdjacentElement('afterend',a)});
 
